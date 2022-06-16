@@ -10,7 +10,7 @@ namespace AllInOneUtility
 {
     public static class XmlHelper
     {
-        public static T ReadXml<T>(string path, out string error, string rootName = null)
+        public static T ReadXmlFile<T>(string path, out string error, string rootName = null)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace AllInOneUtility
                 return default;
             }
         }
-        public static bool ToXml<T>(this T target, string path, out string error, string rootName = null)
+        public static bool ToXmlFile<T>(this T target, string path, out string error, string rootName = null)
         {
             try
             {
